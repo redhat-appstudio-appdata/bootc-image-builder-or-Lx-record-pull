@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: bootc-image-builder
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/walters-tenant/bootc-image-builder/bootc-image-builder@sha256:928a5e1ff35f2649a7ad78c32123a45e29feb5cb6e4941235f3384470f293481
+        name: container-image
+        resources: {}
+status: {}

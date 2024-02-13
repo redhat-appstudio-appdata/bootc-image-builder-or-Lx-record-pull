@@ -4,7 +4,6 @@ metadata:
   creationTimestamp: null
   name: bootc-image-builder
 spec:
-  replicas: 1
   selector: {}
   strategy: {}
   template:
